@@ -84,29 +84,29 @@ print(lista)
 # Numpy array 
 arr11=np.arange(100)
 
-# Checking Size 
-print(sys.getsizeof(87)*len(lista))  # Size of Python list
-print(arr11.itemsize*arr11.size)  # Size of Numpy array
+# # Checking Size 
+# print(sys.getsizeof(87)*len(lista))  # Size of Python list
+# print(arr11.itemsize*arr11.size)  # Size of Numpy array
 
 
-# Time Complexity
-start=time.time()
-x=range(10000000)
-y=range(10000000, 20000000)
+# # # Time Complexity
+# # start=time.time()
+# # x=range(10000000)
+# # y=range(10000000, 20000000)
 
-start1=time.time()
-c=[(x,y) for x,y in zip(x,y)]
-end1=time.time()
+# # start1=time.time()
+# # c=[(x,y) for x,y in zip(x,y)]
+# # end1=time.time()
 
-print("Time taken by Python List: ", end1-start1)
+# # print("Time taken by Python List: ", end1-start1)
 
 
-a=np.arange(10000000)
-b=np.arange(10000000, 20000000)
-start2=time.time()
-c=a+b
-end2=time.time()
-print("Time taken by Numpy Array: ", end2-start2)
+# # a=np.arange(10000000)
+# # b=np.arange(10000000, 20000000)
+# # start2=time.time()
+# # c=a+b
+# # end2=time.time()
+# # print("Time taken by Numpy Array: ", end2-start2)
 
 
 # now i have done
@@ -115,3 +115,29 @@ print("Time taken by Numpy Array: ", end2-start2)
 
 
 # Now Slicing in Numpy Arrays
+
+arr12=np.arange(24)
+print(arr12)
+
+arr13=np.arange(24).reshape(3,8)
+
+print(arr13)
+
+print(arr13[1,3]) 
+
+print(arr13[-1])
+
+# arr[start:end:step]
+
+arr15=np.arange(24).reshape(6,4)
+print(arr15)
+# for 13,14
+# print(arr15[3:5,2:4])
+
+print(arr15[4:5,0:2])
+
+# syntax yeh ha k arr[start(row ):end(row+1),start(column):end(column+1)]
+
+
+for i in np.nditer(arr15):
+    print(i)
