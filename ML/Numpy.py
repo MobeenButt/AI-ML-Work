@@ -114,4 +114,4 @@ print("Time taken by Numpy Array: ", end2-start2)
 # numpy arrays are efficient fast and take less memory than python lists
 
 
-# Now
+# Now Slicing in Numpy Arrays
