@@ -179,3 +179,6 @@ print(arr17.transpose()) # transpose the array
 
 arr=np.random.randint(low=1,high=100,size=20).reshape(4,5)
 print(arr)
+
+print(arr>50)
+print((arr>50).shape)  # shape of the boolean array
