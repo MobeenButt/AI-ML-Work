@@ -141,3 +141,35 @@ print(arr15[4:5,0:2])
 
 for i in np.nditer(arr15):
     print(i)
+    
+# nditer is used to iterate over the elements of the array
+
+
+arr17=np.arange(24).reshape(4,6)
+print(arr17)
+# print(arr17.min())
+# print(arr17.max())
+
+# # for column
+# print(arr17.min(axis=0))
+# # for row
+# print(arr17.max(axis=1))
+# print(arr17.sum())
+# print(arr17.sum(axis=0))
+# print(arr17.sum(axis=1))
+
+# # mean
+# print(arr17.mean())
+# # median
+# print(np.median(arr17))
+# # standard deviation
+# print(arr17.std())
+# # sin
+# print(np.sin(arr17))
+# # cos
+# print(np.cos(arr17))
+
+print(arr17.ndim)  # number of dimensions
+print(arr17.ravel()) # flatten the array in 1D array
+print(arr17.flatten()) # flatten the array in 1D array
+print(arr17.transpose()) # transpose the array
