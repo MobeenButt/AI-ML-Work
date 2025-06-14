@@ -173,3 +173,9 @@ print(arr17.ndim)  # number of dimensions
 print(arr17.ravel()) # flatten the array in 1D array
 print(arr17.flatten()) # flatten the array in 1D array
 print(arr17.transpose()) # transpose the array
+
+
+# Indexing
+
+arr=np.random.randint(low=1,high=100,size=20).reshape(4,5)
+print(arr)
