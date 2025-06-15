@@ -180,5 +180,10 @@ print(arr17.transpose()) # transpose the array
 arr=np.random.randint(low=1,high=100,size=20).reshape(4,5)
 print(arr)
 
-print(arr>50)
+# indexing using Boolean Arrays
+print(arr[(arr>50)& (arr%2!=0)])  # elements greater than 50 and odd
+print(arr[arr>50])  # elements greater than 50
 print((arr>50).shape)  # shape of the boolean array
+
+(arr[(arr>50)& (arr%2!=0)]) =0
+print(arr) 
