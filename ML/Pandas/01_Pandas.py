@@ -29,3 +29,7 @@ print(pandas3)
 pandas4=pd.Series(d,labels)
 print(pandas4)
 print(d)
+
+print(pd.Series(data=labels))
+
+print(pd.Series(data=[sum,print,len]))
