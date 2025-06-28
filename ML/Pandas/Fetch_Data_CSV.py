@@ -7,4 +7,5 @@ data=pd.read_csv('E:\AI\ML\Pandas\\matches.csv')
 
 
 # iloc
-print(data.iloc[0:2])
+print(data.iloc[0:2]) 
+print(data.iloc[0:2, 0:3])  # Accessing first two rows and first three columns
