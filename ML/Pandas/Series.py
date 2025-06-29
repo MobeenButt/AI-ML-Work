@@ -48,13 +48,25 @@ myseries=data['winner'].value_counts()
 # print(myseries.tail())
 
 
-# top teams
-top_teams1 = data['team1'].value_counts()
-# print(top_teams1)
-top_teams2 = data['team2'].value_counts()
-# print(top_teams2)
-# no best way to combine two series
-top_teams=top_teams1+top_teams2
-print(top_teams1*top_teams2)
-print(top_teams1/top_teams2)
-print(top_teams)
+# # top teams
+# top_teams1 = data['team1'].value_counts()
+# # print(top_teams1)
+# top_teams2 = data['team2'].value_counts()
+# # print(top_teams2)
+# # no best way to combine two series
+# top_teams=top_teams1+top_teams2
+# print(top_teams1*top_teams2)
+# # print(top_teams1/top_teams2)
+
+# Sorting
+
+# print(top_teams.sort_values(ascending=False).head(10))  # Displaying the top 10 teams based on match counts
+
+
+print(data['city'].sort_values())
+print(data.sort_values('city',ascending=False))  # Sorting the DataFrame by 'city' in descending order
+print(data.sort_values(['city','date'],ascending=[True,False]))  # Sorting by 'city' and then by 'date' in descending order
+
+# for permanent sorting, we can use the inplace parameter
+data.sort_values('city', ascending=False, inplace=True)  # This will sort the DataFrame by 'city' in descending order and modify the original DataFrame
+print(data.head())  # Displaying the first five rows of the modified DataFrame
